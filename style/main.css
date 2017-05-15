@@ -240,14 +240,25 @@ header ul.navigation li a:hover {
     background-position: bottom;
     margin-bottom: 35px;
     margin-top: 15px;
+    position: relative;
+    overflow: hidden;
+    height: 517px;
 }
 
 .slider .batu .rightBatuInfo {
     width: 40%;
     float: right;
     /*background-image: url("../images/batuShape.png");*/
-    background-color: rgba();
-    opacity: 0.9;
+    background-color: rgba(229, 231,232, 0.9);
+    position: absolute;
+    left: 100%;
+    top: 0;
+    bottom: 0;
+    transition: all ease-out 0.4s;
+}
+
+.slider .batu:hover .rightBatuInfo {
+    left: 60%;
 }
 
 .slider .batu .rightBatuInfo .batuInfo {
@@ -266,14 +277,39 @@ header ul.navigation li a:hover {
 }
 
 .triangle {
-    background-color: #F9F8F8;
-    width: 20px;
-    height: 20px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 12px 8px 0;
+    border-color: transparent rgba(229, 231, 232, 0.9) transparent transparent;
     position: absolute;
-    top: 236px;
-    left: -9px;
-    transform: rotate(-50deg);
-    opacity: 0.9;
+    left: 100%;
+    top: calc(50% - 8px);
+    transition: all ease-out 0.4s;
+}
+
+.seeMore {
+    display: block;
+    position: absolute;
+}
+
+.slider .batu .seeMore {
+    right: 30px;
+    bottom: 20px;
+    transition: all ease-out 0.4s;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff;
+    padding-right: 20px;
+}
+
+.slider .batu:hover .seeMore {
+    right: calc(40% + 30px);
+}
+
+.slider .batu:hover .triangle {
+    left: calc(60% - 12px);
 }
 
 .slider .bromoRow {
