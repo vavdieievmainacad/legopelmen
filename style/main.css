@@ -209,11 +209,11 @@ header ul.navigation li a:hover {
     height: 35px;
     border-radius: 17px;
     border: 1px solid #e8e8e8;
-    /*background-image: url("https://previewsworld.com/Content/images/icons/icon-search.png");*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: left;*/
-    /*background-position: 15px 9px;*/
-    /*background-size: 16px;*/
+    background-image: url("https://previewsworld.com/Content/images/icons/icon-search.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position: 15px 9px;
+    background-size: 16px;
 }
 
 .slider .sliderNavigation a {
@@ -245,7 +245,8 @@ header ul.navigation li a:hover {
 .slider .batu .rightBatuInfo {
     width: 40%;
     float: right;
-    background-image: url("../images/batuShape.png");
+    /*background-image: url("../images/batuShape.png");*/
+    background-color: rgba();
     opacity: 0.9;
 }
 
