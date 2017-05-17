@@ -82,6 +82,7 @@ header {
     position: fixed;
     display: block;
     padding-top: 50px;
+    z-index: 10;
     editor/#000000+83,000000+100&0.65+0,0+98 */
     background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.1) 83%, rgba(0,0,0,0) 98%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.1) 83%,rgba(0,0,0,0) 98%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -146,7 +147,8 @@ header ul.navigation li a:hover {
 
 .cityOfLove .firstLine h2,
 .secondLine h2,
-.infoContainet .setIttinery h2{
+.infoContainet .setIttinery h2,
+.contact h2 {
     color: #29d9c2;
     font-size: 60px;
     font-family: 'Montserrat', sans-serif;
@@ -163,9 +165,13 @@ header ul.navigation li a:hover {
 .secondLine p,
 .secondLine span.details,
 .slider .sliderNavigation input,
-.slider .batu .rightBatuInfo .batuInfo p,
-.slider .bromo .lefrBromoInfo .bromoInfo p,
-.infoContainet .setIttinery p {
+.slider .batu .rightBatuInfo p,
+.slider .bromo .lefrBromoInfo p,
+.infoContainet .setIttinery p,
+.contact form input,
+.contact form .yourMessagec,
+.keep p,
+.keep input {
     font-size: 16px;
     color: #777;
     line-height: 24px;
@@ -190,10 +196,6 @@ header ul.navigation li a:hover {
     top: 0px;
     cursor: help;
 }
-
-/*.secondLine span.details:before{*/
-    /*content: 'i';*/
-/*}*/
 
 .slider {
     background-color: #f2fefe;
@@ -247,10 +249,9 @@ header ul.navigation li a:hover {
 
 .slider .batu .rightBatuInfo {
     width: 40%;
-    float: right;
-    /*background-image: url("../images/batuShape.png");*/
-    background-color: rgba(229, 231,232, 0.9);
+    padding: 100px 55px;
     position: absolute;
+    background-color: rgba(229, 231,232, 0.9);
     left: 100%;
     top: 0;
     bottom: 0;
@@ -261,13 +262,9 @@ header ul.navigation li a:hover {
     left: 60%;
 }
 
-.slider .batu .rightBatuInfo .batuInfo {
-    padding: 100px 55px;
-    position: relative;
-}
 
-.slider .batu .rightBatuInfo .batuInfo h2,
-.slider .bromo .lefrBromoInfo .bromoInfo h2 {
+.slider .batu .rightBatuInfo h2,
+.slider .bromo .lefrBromoInfo h2 {
     color: #29d9c2;
     margin: 20px 0;
     font-family: 'Montserrat', sans-serif;
@@ -293,7 +290,9 @@ header ul.navigation li a:hover {
     position: absolute;
 }
 
-.slider .batu .seeMore {
+.slider .batu .seeMore,
+.slider .bromoRow .bromo .seeMore,
+.slider .bromoRow .palm .seeMore {
     right: 30px;
     bottom: 20px;
     transition: all ease-out 0.4s;
@@ -325,49 +324,88 @@ header ul.navigation li a:hover {
     background-size: cover;
     background-position: bottom;
     float: left;
+    overflow: hidden;
+    height: 361px;
+    position: relative;
 }
 
 .slider .bromoRow .bromo .lefrBromoInfo {
     float: left;
     width: 50%;
-    background-image: url("../images/batuShape.png");
-    opacity: 0.9;
+    padding: 57px 30px;
+    position: absolute;
+    background-color: rgba(229, 231,232, 0.9);
+    right: 100%;
+    top: 0;
+    bottom: 0;
+    transition: all ease-out 0.4s;
 }
 
-.slider .bromoRow .bromo .lefrBromoInfo .bromoInfo {
-    padding: 57px 30px;
-    position: relative;
+.slider .bromoRow .bromo:hover .lefrBromoInfo {
+    right: 50%;
 }
+
 
 .triangleBromo {
-    background-color: #F9F8F8;
-    width: 20px;
-    height: 20px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 8px 0 8px 12px;
+    border-color: transparent transparent transparent rgba(229, 231, 232, 0.9);
     position: absolute;
-    top: 170px;
-    left: 330px;
-    transform: rotate(-50deg);
-    opacity: 0.9;
+    right: 100%;
+    top: calc(50% - 8px);
+    transition: all ease-out 0.4s;
+}
+
+.slider .bromoRow .bromo:hover .triangleBromo {
+    right: calc(50% - 12px);
 }
 
 .slider .bromoRow .palm {
     width: 40%;
-    /*background-image: url("../images/image3.png");*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
-    /*background-position: bottom;*/
+    background-image: url("../images/image3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
     float: left;
     margin-left: 36px;
-    /*height: 361px;*/
+    height: 361px;
+    position: relative;
+    overflow: hidden;
 }
 
-.slider .bromoRow .palm .hover {
-    display: none;
+.slider .bromoRow .palm:hover .shadow {
+    background-color: rgba(43,43,43,0.6);
+    width: 100%;
+    height: 100%;
+    transition: all ease-in 0.6s;
 }
 
-.slider .bromoRow .palm .hover:hover {
+.slider .bromoRow .palm:hover .shadow .hoverPalm {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    border-radius: 50%;
+    top: calc(50% - 60px);
+    left: calc(50% - 60px);
+    transition: all ease-in-out 0.5s;
+}
+
+.slider .bromoRow .palm .shadow .hoverPalm img {
     display: block;
+    opacity: 0;
 }
+
+.slider .bromoRow .palm:hover .shadow .hoverPalm img{
+    opacity: 1;
+    display: block;
+    width: 70%;
+    margin: 10px auto;
+    transition: all ease 0.4s;
+}
+
 
 .infoContainet {
     background-color: #fff;
@@ -375,5 +413,135 @@ header ul.navigation li a:hover {
 
 .infoContainet .setIttinery {
     text-align: center;
-    padding-bottom: 145px;
+    padding-bottom: 70px;
+}
+
+.contact {
+    background-color: rgba(0,180,181,0.7);
+    width: 100%;
+    padding-bottom: 105px;
+    /*height: 670px;*/
+}
+
+.contact h2 {
+    color: #fff;
+    padding: 50px 45% 40px;
+}
+
+.contact form {
+    width: 100%;
+    padding: 20px 0px 40px;
+}
+
+.contact form input,
+.contact form .yourMessagec {
+    height: 55px;
+    border-radius: 6px;
+    border: 1px solid #e8e8e8;
+    margin: 10px 0;
+}
+
+.contact form .email {
+    width: 100%;
+}
+
+.contact form .company {
+    width: 49%;
+    float: left;
+}
+
+.contact form .subject {
+    width: 49%;
+    float: right;
+}
+
+.contact form .yourMessagec {
+    width: 100%;
+    height: 100px;
+}
+
+.contact form .submit {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    float: right;
+    border-radius: 27px;
+    width: 155px;
+    background-color: #B4EC84;
+    border: none;
+}
+
+.contact .usHere {
+    padding: 40px 60px;
+    width: 80%;
+    float: right;
+}
+
+.contact .usHere h3 {
+    font-weight: 100;
+    font-size: 36px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 60px;
+}
+
+.contact .usHere p {
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 10px;
+    padding-left: 4px;
+}
+
+.contact .usHere p a {
+    text-transform: uppercase;
+    font-style: italic;
+    color: #F6EE6E;
+    padding-left: 10px;
+}
+
+.keep {
+    editor/#bdf271+0,bdf271+50,b1e567+51,b1e567+100 */
+    background: rgb(189,242,113); /* Old browsers */
+    background: -moz-linear-gradient(45deg, rgba(189,242,113,1) 0%, rgba(189,242,113,1) 50%, rgba(177,229,103,1) 51%, rgba(177,229,103,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, rgba(189,242,113,1) 0%,rgba(189,242,113,1) 50%,rgba(177,229,103,1) 51%,rgba(177,229,103,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, rgba(189,242,113,1) 0%,rgba(189,242,113,1) 50%,rgba(177,229,103,1) 51%,rgba(177,229,103,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdf271', endColorstr='#b1e567',GradientType=1 );
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.keep h2 {
+    color: #fff;
+    font-size: 76px;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 5px;
+    margin-top: 15px;
+}
+
+.keep p {
+    color: #fff;
+    padding-left: 10px;
+}
+
+.keep input {
+    float: right;
+    height: 72px;
+    margin-top: 20px;
+}
+
+.keep .keepEmail {
+    width: 80%;
+    border-radius: 6px;
+    border: 1px solid #e8e8e8;
+}
+
+.keep .keepSubmit {
+    width: 72px;
+    border-radius: 6px;
+    border: 1px solid #e8e8e8;
+    background-color: #01A2A6;
+    position: absolute;
+    top: 0px;
+    right: 72px;
 }
