@@ -18,11 +18,11 @@ button:focus {
 }
 
 .left {
-    text-align: left!important;
+    text-align: left !important;
 }
 
 .right {
-    text-align: right!important;
+    text-align: right !important;
 }
 
 .clearFix {
@@ -46,7 +46,8 @@ button:focus {
 
 .top h1 {
     color: #ffffff;
-    font-size: 80px;text-transform: uppercase;
+    font-size: 80px;
+    text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 15px;
 }
@@ -83,11 +84,11 @@ header {
     display: block;
     padding-top: 50px;
     z-index: 10;
-    editor/#000000+83,000000+100&0.65+0,0+98 */
-    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.1) 83%, rgba(0,0,0,0) 98%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.1) 83%,rgba(0,0,0,0) 98%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.1) 83%,rgba(0,0,0,0) 98%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    editor / #000000 +83, 000000 +100 & 0.65 +0, 0 +98 */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.1) 83%, rgba(0, 0, 0, 0) 98%, rgba(0, 0, 0, 0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.1) 83%, rgba(0, 0, 0, 0) 98%, rgba(0, 0, 0, 0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.1) 83%, rgba(0, 0, 0, 0) 98%, rgba(0, 0, 0, 0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=0); /* IE6-9 */
 }
 
 header .logo {
@@ -169,7 +170,7 @@ header ul.navigation li a:hover {
 .slider .bromo .lefrBromoInfo p,
 .infoContainet .setIttinery p,
 .contact form input,
-.contact form .yourMessagec,
+.contact form .yourMessages,
 .keep p,
 .keep input {
     font-size: 16px;
@@ -251,7 +252,7 @@ header ul.navigation li a:hover {
     width: 40%;
     padding: 100px 55px;
     position: absolute;
-    background-color: rgba(229, 231,232, 0.9);
+    background-color: rgba(229, 231, 232, 0.9);
     left: 100%;
     top: 0;
     bottom: 0;
@@ -261,7 +262,6 @@ header ul.navigation li a:hover {
 .slider .batu:hover .rightBatuInfo {
     left: 60%;
 }
-
 
 .slider .batu .rightBatuInfo h2,
 .slider .bromo .lefrBromoInfo h2 {
@@ -334,7 +334,7 @@ header ul.navigation li a:hover {
     width: 50%;
     padding: 57px 30px;
     position: absolute;
-    background-color: rgba(229, 231,232, 0.9);
+    background-color: rgba(229, 231, 232, 0.9);
     right: 100%;
     top: 0;
     bottom: 0;
@@ -344,7 +344,6 @@ header ul.navigation li a:hover {
 .slider .bromoRow .bromo:hover .lefrBromoInfo {
     right: 50%;
 }
-
 
 .triangleBromo {
     width: 0;
@@ -376,13 +375,13 @@ header ul.navigation li a:hover {
 }
 
 .slider .bromoRow .palm:hover .shadow {
-    background-color: rgba(43,43,43,0.6);
+    background-color: rgba(43, 43, 43, 0.6);
     width: 100%;
     height: 100%;
     transition: all ease-in 0.6s;
 }
 
-.slider .bromoRow .palm:hover .shadow .hoverPalm {
+.slider .bromoRow .palm .shadow .hoverPalm {
     position: absolute;
     width: 120px;
     height: 120px;
@@ -390,6 +389,11 @@ header ul.navigation li a:hover {
     border-radius: 50%;
     top: calc(50% - 60px);
     left: calc(50% - 60px);
+    opacity: 0;
+}
+
+.slider .bromoRow .palm:hover .shadow .hoverPalm {
+    opacity: 1;
     transition: all ease-in-out 0.5s;
 }
 
@@ -398,17 +402,19 @@ header ul.navigation li a:hover {
     opacity: 0;
 }
 
-.slider .bromoRow .palm:hover .shadow .hoverPalm img{
+.slider .bromoRow .palm:hover .shadow .hoverPalm img {
     opacity: 1;
     display: block;
     width: 70%;
     margin: 10px auto;
-    transition: all ease 0.4s;
 }
-
 
 .infoContainet {
     background-color: #fff;
+}
+
+.infoContainet .innerWrapper {
+    padding: 60px 0 80px;
 }
 
 .infoContainet .setIttinery {
@@ -416,29 +422,96 @@ header ul.navigation li a:hover {
     padding-bottom: 70px;
 }
 
+.infoContainet .colored .formHeader {
+    height: 70px;
+    background-image: url('../images/formImg.png');
+}
+
+.infoContainet .colored .formHeader h4 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 25px;
+}
+
+.infoContainet .colored .formBody {
+    background-color: #ffffa6;
+    padding: 15px 25px;
+}
+
+.infoContainet .colored .formBody .day {
+
+}
+
+.infoContainet .colored .formBody .day .line {
+    text-align: right;
+}
+
+.infoContainet .colored .formBody .day .line input[type="text"] {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #e8e8e8;
+    text-align: left;
+}
+
+.infoContainet .colored .formBody .day .line a {
+    display: inline-block;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    margin: 0 5px 10px 0;
+    background-color: #F5E99D;
+    color: #D7CA7C;
+    border: 1px solid #D7CA7C;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-family: 'Lato', sans-serif;
+}
+
 .contact {
-    background-color: rgba(0,180,181,0.7);
     width: 100%;
     padding-bottom: 105px;
-    /*height: 670px;*/
+    background-image: url('http://mapsys.info/wp-content/uploads/2010/08/NY-Google-Maps-17-40-quality-preview.jpg');
+    position: relative;
+    min-height: 670px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact .or {
+    color: #ffffff;
+    position: absolute;
+
+}
+
+.contact .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 180, 181, 0.7);
 }
 
 .contact h2 {
     color: #fff;
-    padding: 50px 45% 40px;
+    text-align: center;
+    padding: 50px 0 40px;
 }
 
 .contact form {
     width: 100%;
-    padding: 20px 0px 40px;
+    padding: 20px 0 40px;
 }
 
 .contact form input,
-.contact form .yourMessagec {
+.contact form .yourMessages {
     height: 55px;
     border-radius: 6px;
     border: 1px solid #e8e8e8;
     margin: 10px 0;
+    padding: 5px 15px;
 }
 
 .contact form .email {
@@ -455,9 +528,10 @@ header ul.navigation li a:hover {
     float: right;
 }
 
-.contact form .yourMessagec {
+.contact form .yourMessages {
     width: 100%;
     height: 100px;
+    resize: none;
 }
 
 .contact form .submit {
@@ -467,9 +541,10 @@ header ul.navigation li a:hover {
     font-weight: 600;
     float: right;
     border-radius: 27px;
-    width: 155px;
     background-color: #B4EC84;
     border: none;
+    padding: 0 20px;
+    letter-spacing: 1px;
 }
 
 .contact .usHere {
@@ -493,20 +568,25 @@ header ul.navigation li a:hover {
     padding-left: 4px;
 }
 
+.contact .usHere p i {
+    padding-right: 8px;
+}
+
 .contact .usHere p a {
     text-transform: uppercase;
     font-style: italic;
     color: #F6EE6E;
-    padding-left: 10px;
+    padding-left: 20px;
+    padding-top: 5px;
+    display: inline-block;
 }
 
 .keep {
-    editor/#bdf271+0,bdf271+50,b1e567+51,b1e567+100 */
-    background: rgb(189,242,113); /* Old browsers */
-    background: -moz-linear-gradient(45deg, rgba(189,242,113,1) 0%, rgba(189,242,113,1) 50%, rgba(177,229,103,1) 51%, rgba(177,229,103,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, rgba(189,242,113,1) 0%,rgba(189,242,113,1) 50%,rgba(177,229,103,1) 51%,rgba(177,229,103,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, rgba(189,242,113,1) 0%,rgba(189,242,113,1) 50%,rgba(177,229,103,1) 51%,rgba(177,229,103,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bdf271', endColorstr='#b1e567',GradientType=1 );
+    background: rgb(189, 242, 113); /* Old browsers */
+    background: -moz-linear-gradient(45deg, rgba(189, 242, 113, 1) 0%, rgba(189, 242, 113, 1) 50%, rgba(177, 229, 103, 1) 51%, rgba(177, 229, 103, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, rgba(189, 242, 113, 1) 0%, rgba(189, 242, 113, 1) 50%, rgba(177, 229, 103, 1) 51%, rgba(177, 229, 103, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, rgba(189, 242, 113, 1) 0%, rgba(189, 242, 113, 1) 50%, rgba(177, 229, 103, 1) 51%, rgba(177, 229, 103, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bdf271', endColorstr='#b1e567', GradientType=1);
     padding-bottom: 60px;
     position: relative;
 }
