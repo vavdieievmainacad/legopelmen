@@ -748,6 +748,10 @@ footer .left a {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
 }
+footer .right {
+    float: right;
+    padding: 7px;
+}
 footer .links i {
     color: #5a595a;
     font-size: 8px;
