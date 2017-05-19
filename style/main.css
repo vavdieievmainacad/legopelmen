@@ -441,32 +441,83 @@ header ul.navigation li a:hover {
     padding: 15px 25px;
 }
 
-.infoContainet .colored .formBody .day {
+.infoContainet .colored .formBody .day1 {
 
 }
 
-.infoContainet .colored .formBody .day .line {
+.infoContainet .colored .formBody .day1 .line {
     text-align: right;
 }
 
-.infoContainet .colored .formBody .day .line input[type="text"] {
+.infoContainet .colored .formBody .day1 .line input[type="text"] {
     width: 100%;
     padding: 10px 15px;
     border: 1px solid #e8e8e8;
     text-align: left;
 }
 
-.infoContainet .colored .formBody .day .line a {
+.infoContainet .colored .formBody .day1 .line a {
     display: inline-block;
     padding: 5px 10px;
     letter-spacing: 1px;
     margin: 0 5px 10px 0;
     background-color: #F5E99D;
     color: #D7CA7C;
-    border: 1px solid #D7CA7C;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     font-family: 'Lato', sans-serif;
+}
+
+.infoContainet .colored .formBody .day1 .line .enjoy{
+    background-color: #F5E99D;
+    text-align: left;
+    margin: 0 5px 0 5px;
+}
+
+.infoContainet .colored .formBody .day1 .line .enjoy span{
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    color: #AEA25C;
+    padding-left: 35px;
+    line-height: 2.5;
+}
+
+.infoContainet .colored .formBody .day1 .line .enjoy hr{
+    /*background-color: #DACD80;*/
+    border-color: #DACD80;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.infoContainet .colored .formBody .day2 {
+    padding-top: 25px;
+    position: relative;
+}
+
+.infoContainet .colored .formBody .day2 .leftSpan{
+    display: block;
+    float: left;
+    font-weight: bold;
+}
+
+
+.infoContainet .colored .formBody .day2 .rightSpan{
+    display: block;
+    float: right;
+}
+
+.infoContainet .colored .formBody .day2  .spanDropdown{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 3.5px 0 3.5px;
+    border-color: #007bff transparent transparent transparent;
+    margin: 5px 0px 0px 518px;
+}
+
+.infoContainet .colored .formBody .day2 .drug{
+    height: 100px;
 }
 
 .contact {
