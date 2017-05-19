@@ -796,6 +796,8 @@ footer p {
 
 .listDestination .itemDestination h4 {
     text-align: left;
+    float: left;
+    padding: 10px;
 }
 
 .listDestination .itemDestination p {
@@ -805,4 +807,5 @@ footer p {
 .listDestination .itemDestination img {
     float: right;
     width: 45px;
+    margin: 10px 10px 0 0;
 }
