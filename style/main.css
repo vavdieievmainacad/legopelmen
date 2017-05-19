@@ -538,6 +538,12 @@ header ul.navigation li a:hover {
     float: right;
     margin: 15px;
 }
+
+.infoContainet .colored button {
+    border: none;
+    cursor: pointer;
+}
+
 .infoContainet .colored .save {
     box-shadow: white;
     margin-right: 15px;
@@ -549,15 +555,27 @@ header ul.navigation li a:hover {
     padding: 12px 25px 12px 25px;
     text-transform: uppercase;
 }
+
+.infoContainet .colored .save:hover, .contact form .submit:hover {
+    background-color: #a4ef3a;
+    cursor: pointer;
+}
+
 .infoContainet .colored .print {
     border-radius: 25px;
     font-family: 'Montserrat', sans-serif;
     color: #ffffff;
     font-size: 19px;
-    background: #3ddbc7;
+    background: #29d9c2;
     padding: 12px 25px 12px 25px;
     text-transform: uppercase;
 }
+
+.infoContainet .colored .print:hover, .keep .keepSubmit:hover {
+    background-color: #34b3a3;
+    cursor: pointer;
+}
+
 .infoContainet .half h4 {
     text-align: center;
     color: #29d9c2;
@@ -762,4 +780,29 @@ footer p {
     color: #afafaf;
     bottom: 15px;
     left: 466px;
+}
+
+.listDestination {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.listDestination .itemDestination {
+    display: block;
+    border: 1px solid grey;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.listDestination .itemDestination h4 {
+    text-align: left;
+}
+
+.listDestination .itemDestination p {
+
+}
+
+.listDestination .itemDestination img {
+    float: right;
+    width: 45px;
 }
