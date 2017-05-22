@@ -809,6 +809,10 @@ footer p {
     margin: 10px 10px 0 0;
 }
 
+.contact .half.reverse {
+    float: right;
+}
+
 @media screen and (max-width: 1280px) {
 
 }
@@ -840,7 +844,7 @@ footer p {
         margin-bottom: 30px;
     }
 
-    .seeMore, .triangle {
+    .seeMore, .triangle, .triangleBromo, .contact span {
         display: none;
     }
 
@@ -850,6 +854,55 @@ footer p {
 
     .sliderNavigation .half {
         width: 100%;
+    }
+
+    .slider .batu .rightBatuInfo, .slider .batu:hover .rightBatuInfo {
+        left: 0;
+        width: 100%;
+    }
+
+    .slider .bromoRow .bromo .lefrBromoInfo, .slider .bromoRow .bromo:hover .lefrBromoInfo {
+        width: 100%;
+        right: 0;
+    }
+
+   .infoContainet .half.colored {
+        min-width: 480px;
+        margin: 0 auto;
+        float: none;
+   }
+
+   .infoContainet .half:not(.colored) {
+        width: 100%;
+        float: none;
+        margin: 100px auto 0;
+   }
+
+    .infoContainet .colored .formBody .day .dragDestination span {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .contact .half.reverse {
+        float: none;
+        min-width: 480px;
+        margin: 0 auto;
+    }
+
+    .contact .half:not(.reverse) {
+        float: none;
+        min-width: 480px;
+        margin: 0 auto;
+    }
+
+    .contact .usHere {
+        padding: 40px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact .usHere p a {
+        padding-left: 0;
     }
 }
 
