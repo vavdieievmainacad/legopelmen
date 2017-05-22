@@ -366,7 +366,7 @@ header ul.navigation li a:hover {
     background-size: cover;
     background-position: bottom;
     float: left;
-    margin-left: 36px;
+    margin-left: 3%;
     height: 361px;
     position: relative;
     overflow: hidden;
@@ -757,7 +757,6 @@ footer {
     background-color: #2f2933;
     background-image: url("../images/footerBg.png");
     width: 100%;
-    height: 247px;
     padding: 20px;
 }
 footer .left a {
@@ -776,10 +775,10 @@ footer .links i {
     padding: 5px;
 }
 footer p {
-    position: absolute;
+    margin-top: 120px;
     color: #afafaf;
-    bottom: 15px;
-    left: 466px;
+    margin-bottom: 15px;
+    text-align: center;
 }
 
 .listDestination {
@@ -809,3 +808,52 @@ footer p {
     width: 45px;
     margin: 10px 10px 0 0;
 }
+
+@media screen and (max-width: 1280px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+    .innerWrapper, .cityOfLove .firstLine .innerWrapper, .secondLine .innerWrapper {
+        max-width: 960px;
+    }
+
+    .slider .sliderNavigation {
+        padding: 5px 10%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cityOfLove .firstLine img {
+        width: 90%;
+        padding-top: 60px;
+    }
+    .cityOfLove {
+        height: auto;
+    }
+
+    .cityOfLove .row .half.left {
+        padding: 30px 5%;
+    }
+
+    .sliderNavigation .half:not(.right) {
+        margin-bottom: 30px;
+    }
+
+    .seeMore, .triangle {
+        display: none;
+    }
+
+    .sliderNavigation .half.right {
+        text-align: left!important;
+    }
+
+    .sliderNavigation .half {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
