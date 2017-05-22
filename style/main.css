@@ -194,7 +194,7 @@ header ul.navigation li a:hover {
     display: block;
     position: absolute;
     right: 100px;
-    top: 0px;
+    top: 0;
     cursor: help;
 }
 
@@ -214,9 +214,7 @@ header ul.navigation li a:hover {
     border: 1px solid #e8e8e8;
     background-image: url("https://previewsworld.com/Content/images/icons/icon-search.png");
     background-repeat: no-repeat;
-    background-position: left;
     background-position: 15px 9px;
-    background-size: 16px;
 }
 
 .slider .sliderNavigation a {
@@ -368,7 +366,7 @@ header ul.navigation li a:hover {
     background-size: cover;
     background-position: bottom;
     float: left;
-    margin-left: 36px;
+    margin-left: 3%;
     height: 361px;
     position: relative;
     overflow: hidden;
@@ -440,84 +438,148 @@ header ul.navigation li a:hover {
     background-color: #ffffa6;
     padding: 15px 25px;
 }
-
-.infoContainet .colored .formBody .day1 {
+.infoContainet .colored .formBody .day {
+    margin-bottom: 20px;
+}
+.infoContainet .colored .formBody .day #day {
+    font-family: 'Montserrat', sans-serif;
+    color: #29d9c2;
+}
+.infoContainet .colored .formBody .day input[type=date] {
+    background-color: #ffffa6;
+    border: none;
+    float: right;
+    font-family: 'Montserrat', sans-serif;
+    color: #29d9c2;
+    font-size: 16px;
+    letter-spacing: 1px;
+    width: 160px;
+    padding-bottom: 15px;
 
 }
 
-.infoContainet .colored .formBody .day1 .line {
+.infoContainet .colored .formBody .day .line {
     text-align: right;
 }
 
-.infoContainet .colored .formBody .day1 .line input[type="text"] {
+.infoContainet .colored .formBody .day .line input[type="text"] {
     width: 100%;
-    padding: 10px 15px;
+    padding: 15px 62px;
     border: 1px solid #e8e8e8;
     text-align: left;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #626262;
+
+}
+.infoContainet .colored .formBody .day .line .mtBromo {
+    background-image: url("../images/logoBromo.png");
+    background-repeat: no-repeat;
+    background-position: 11px 12px;
+    background-size: 39px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.infoContainet .colored .formBody .day .line .batuCity {
+    background-image: url("../images/logoBatu.png");
+    background-repeat: no-repeat;
+    background-position: 11px 8px;
+    background-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+
 }
 
-.infoContainet .colored .formBody .day1 .line a {
+.infoContainet .colored .formBody .day .line ul {
+    background-color: #f5e99e;
+    text-align: left;
+    list-style-type: none;
+    margin: 0 5px;
+}
+.infoContainet .colored .formBody .day .line ul li {
+    padding: 15px;
+    color: #aea25c;
+    border-radius: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.infoContainet .colored .formBody .day .line ul hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.infoContainet .colored .formBody .day .dragDestination{
+    text-align: center;
+    margin-top: 20px;
+}
+.infoContainet .colored .formBody .day .dragDestination span{
+    border: 3px dashed #D7CA7C;
+    padding: 20px 178px;
+    color: #D7CA7C;
+    background-color: #F5E99D;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    text-transform: capitalize;
+}
+.infoContainet .colored .formBody .day .line a {
     display: inline-block;
     padding: 5px 10px;
     letter-spacing: 1px;
     margin: 0 5px 10px 0;
     background-color: #F5E99D;
     color: #D7CA7C;
+    border: 1px solid #D7CA7C;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     font-family: 'Lato', sans-serif;
 }
-
-.infoContainet .colored .formBody .day1 .line .enjoy{
-    background-color: #F5E99D;
-    text-align: left;
-    margin: 0 5px 0 5px;
-}
-
-.infoContainet .colored .formBody .day1 .line .enjoy span{
-    font-family: 'Lato', sans-serif;
-    letter-spacing: 1px;
-    color: #AEA25C;
-    padding-left: 35px;
-    line-height: 2.5;
-}
-
-.infoContainet .colored .formBody .day1 .line .enjoy hr{
-    /*background-color: #DACD80;*/
-    border-color: #DACD80;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.infoContainet .colored .formBody .day2 {
-    padding-top: 25px;
-    position: relative;
-}
-
-.infoContainet .colored .formBody .day2 .leftSpan{
-    display: block;
-    float: left;
-    font-weight: bold;
-}
-
-
-.infoContainet .colored .formBody .day2 .rightSpan{
-    display: block;
+.infoContainet .colored .formButtons{
     float: right;
+    margin: 15px;
 }
 
-.infoContainet .colored .formBody .day2  .spanDropdown{
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 6px 3.5px 0 3.5px;
-    border-color: #007bff transparent transparent transparent;
-    margin: 5px 0px 0px 518px;
+.infoContainet .colored button {
+    border: none;
+    cursor: pointer;
 }
 
-.infoContainet .colored .formBody .day2 .drug{
-    height: 100px;
+.infoContainet .colored .save {
+    box-shadow: white;
+    margin-right: 15px;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 19px;
+    background: #c3f37f;
+    padding: 12px 25px 12px 25px;
+    text-transform: uppercase;
+}
+
+.infoContainet .colored .save:hover, .contact form .submit:hover {
+    background-color: #a4ef3a;
+    cursor: pointer;
+}
+
+.infoContainet .colored .print {
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 19px;
+    background: #29d9c2;
+    padding: 12px 25px 12px 25px;
+    text-transform: uppercase;
+}
+
+.infoContainet .colored .print:hover, .keep .keepSubmit:hover {
+    background-color: #34b3a3;
+    cursor: pointer;
+}
+
+.infoContainet .half h4 {
+    text-align: center;
+    color: #29d9c2;
+    padding: 20px 20px;
 }
 
 .contact {
@@ -565,6 +627,7 @@ header ul.navigation li a:hover {
     padding: 5px 15px;
 }
 
+
 .contact form .email {
     width: 100%;
 }
@@ -596,6 +659,15 @@ header ul.navigation li a:hover {
     border: none;
     padding: 0 20px;
     letter-spacing: 1px;
+}
+
+.contact .overlay span {
+    position: absolute;
+    bottom: 246px;
+    right: 551px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
 }
 
 .contact .usHere {
@@ -640,6 +712,7 @@ header ul.navigation li a:hover {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bdf271', endColorstr='#b1e567', GradientType=1);
     padding-bottom: 60px;
     position: relative;
+    padding-top: 35px;
 }
 
 .keep h2 {
@@ -656,23 +729,131 @@ header ul.navigation li a:hover {
 }
 
 .keep input {
-    float: right;
+    position: relative;
+    margin: 25px 0;
+    padding: 0 0 0 20px;
     height: 72px;
-    margin-top: 20px;
+
 }
 
 .keep .keepEmail {
     width: 80%;
     border-radius: 6px;
     border: 1px solid #e8e8e8;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
 }
 
 .keep .keepSubmit {
+    position: absolute;
     width: 72px;
     border-radius: 6px;
     border: 1px solid #e8e8e8;
-    background-color: #01A2A6;
-    position: absolute;
-    top: 0px;
-    right: 72px;
+    background-image: url("../images/forward.png");
+    border-top-left-radius: 0;
 }
+footer {
+    position: relative;
+    background-color: #2f2933;
+    background-image: url("../images/footerBg.png");
+    width: 100%;
+    padding: 20px;
+}
+footer .left a {
+    color: #5a595a;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+footer .right {
+    float: right;
+    padding: 7px;
+}
+footer .links i {
+    color: #5a595a;
+    font-size: 8px;
+    padding: 5px;
+}
+footer p {
+    margin-top: 120px;
+    color: #afafaf;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.listDestination {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.listDestination .itemDestination {
+    display: block;
+    border: 1px solid grey;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.listDestination .itemDestination h4 {
+    text-align: left;
+    float: left;
+    padding: 10px;
+}
+
+.listDestination .itemDestination p {
+
+}
+
+.listDestination .itemDestination img {
+    float: right;
+    width: 45px;
+    margin: 10px 10px 0 0;
+}
+
+@media screen and (max-width: 1280px) {
+
+}
+
+@media screen and (max-width: 1024px) {
+    .innerWrapper, .cityOfLove .firstLine .innerWrapper, .secondLine .innerWrapper {
+        max-width: 960px;
+    }
+
+    .slider .sliderNavigation {
+        padding: 5px 10%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cityOfLove .firstLine img {
+        width: 90%;
+        padding-top: 60px;
+    }
+    .cityOfLove {
+        height: auto;
+    }
+
+    .cityOfLove .row .half.left {
+        padding: 30px 5%;
+    }
+
+    .sliderNavigation .half:not(.right) {
+        margin-bottom: 30px;
+    }
+
+    .seeMore, .triangle {
+        display: none;
+    }
+
+    .sliderNavigation .half.right {
+        text-align: left!important;
+    }
+
+    .sliderNavigation .half {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
