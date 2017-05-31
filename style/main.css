@@ -1,0 +1,60 @@
+header {
+  width: 100%;
+  display: inline-block;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.clearFix {
+  float: none;
+  clear: both;
+}
+.info.left li {
+  display: inline-block;
+  padding: 0 10px;
+}
+.info.left .li-email {
+  background-image: url('../images/Mail Ico.png');
+  background-position: left center;
+  padding: 10px 0px 10px 30px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.info.left .li-phone {
+  background-image: url('../images/Phone Ico.png');
+  background-position: left center;
+  background-repeat: no-repeat;
+  padding: 10px 0px 10px 25px;
+}
+.social.right {
+  margin-left: auto;
+  margin-right: auto;
+}
+.social.right li {
+  display: inline-block;
+}
+.social.right .li-facebook {
+  background-image: url('../images/facebook.png');
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.social.right .li-twitter {
+  background-image: url('../images/twitter.png');
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.social.right .li-google {
+  background-image: url('../images/google.png');
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+.social.right .li-instagram {
+  background-image: url('../images/instegram.png');
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map */
