@@ -1,0 +1,600 @@
+.hoverButton {
+  background-color: #a4ef3a;
+  cursor: pointer;
+}
+.h2 {
+  color: #29d9c2;
+  font-size: 60px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 60px 0 40px;
+}
+.sliderH2 {
+  color: #29d9c2;
+  margin: 20px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  text-align: left;
+}
+.p {
+  font-size: 16px;
+  color: #777777;
+  line-height: 24px;
+  font-family: 'Lato', sans-serif;
+}
+.sliderSeeMore {
+  right: 30px;
+  bottom: 20px;
+  transition: all ease-out 0.4s;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffffff;
+  padding-right: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+.innerWrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.left {
+  text-align: left !important;
+}
+.right {
+  text-align: right !important;
+}
+.clearFix {
+  float: none;
+  clear: both;
+}
+.top {
+  background-color: #9bddd8;
+  background-image: url("../images/top_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  text-align: center;
+  padding-top: 238px;
+}
+.top h1 {
+  color: #ffffff;
+  font-size: 80px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 15px;
+}
+.top h1 span {
+  color: #01a2a6;
+}
+.top p {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'Lato', sans-serif;
+}
+.top a {
+  border-radius: 24px;
+  color: #10273d;
+  background-color: #ffffa6;
+  padding: 14px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  display: block;
+  font-family: 'Lato', sans-serif;
+  width: 250px;
+  margin: 30px auto;
+  letter-spacing: 1px;
+}
+.top,
+.cityOfLove {
+  height: 740px;
+}
+header {
+  height: 120px;
+  width: 100%;
+  position: fixed;
+  display: block;
+  padding-top: 50px;
+  z-index: 10;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.1) 83%, rgba(0, 0, 0, 0) 98%, rgba(0, 0, 0, 0) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.1) 83%, rgba(0, 0, 0, 0) 98%, rgba(0, 0, 0, 0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.1) 83%, rgba(0, 0, 0, 0) 98%, rgba(0, 0, 0, 0) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a6000000', endColorstr='#00000000', GradientType=0);
+  /* IE6-9 */
+}
+header .logo {
+  width: 150px;
+  /*padding-top: 35px;*/
+}
+header ul.navigation {
+  list-style: none;
+  float: right;
+  padding-top: 15px;
+}
+header ul.navigation li {
+  float: left;
+  margin-left: 12px;
+}
+header ul.navigation li a {
+  color: #ffffff;
+  letter-spacing: 1px;
+  padding: 5px 12px;
+  border: 2px solid transparent;
+  text-transform: capitalize;
+  font-family: 'Lato', sans-serif;
+}
+header ul.navigation li a:hover {
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+}
+.cityOfLove .row.firstLine {
+  padding-bottom: 50px;
+}
+.cityOfLove .row.firstLine img {
+  padding-top: 50px;
+}
+.cityOfLove .row.secondLine {
+  background-color: #f2fefe;
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+.cityOfLove .row .half {
+  padding-top: 30px;
+  text-align: center;
+}
+.cityOfLove .firstLine .innerWrapper {
+  margin-top: -40px;
+  opacity: 0.6;
+  background-color: #ffffff;
+}
+.cityOfLove .firstLine h2 {
+  color: #29d9c2;
+  font-size: 60px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 60px 0 40px;
+}
+.cityOfLove .firstLine h2 span {
+  color: #01a2a6;
+}
+.cityOfLove .firstLine p {
+  font-size: 16px;
+  color: #777777;
+  line-height: 24px;
+  font-family: 'Lato', sans-serif;
+}
+.cityOfLove .secondLine h2 {
+  color: #29d9c2;
+  font-size: 60px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 60px 0 40px;
+}
+.cityOfLove .secondLine h2 span {
+  color: #01a2a6;
+}
+.cityOfLove .secondLine p {
+  font-size: 16px;
+  color: #777777;
+  line-height: 24px;
+  font-family: 'Lato', sans-serif;
+}
+.cityOfLove .secondLine span.details {
+  font-size: 16px;
+  color: #777777;
+  line-height: 24px;
+  font-family: 'Lato', sans-serif;
+}
+.secondLine .innerWrapper {
+  position: relative;
+  padding: 0 100px;
+}
+.secondLine span.details {
+  display: block;
+  position: absolute;
+  right: 100px;
+  top: 0;
+  cursor: help;
+}
+.slider {
+  background-color: #f2fefe;
+}
+.slider .sliderNavigation {
+  padding: 5px 100px;
+}
+.slider .sliderNavigation input {
+  font-size: 16px;
+  color: #777777;
+  line-height: 24px;
+  font-family: 'Lato', sans-serif;
+  padding: 5px 5px 5px 40px;
+  width: 235px;
+  height: 35px;
+  border-radius: 17px;
+  border: 1px solid #e8e8e8;
+  background-image: url("https://previewsworld.com/Content/images/icons/icon-search.png");
+  background-repeat: no-repeat;
+  background-position: 15px 9px;
+}
+.slider .sliderNavigation a {
+  color: #777777;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+}
+.slider .sliderNavigation a.active {
+  font-weight: 700;
+  color: #01a2a6;
+  cursor: default;
+}
+.slider .sliderNavigation .separator {
+  padding: 0 5px;
+  font-weight: 900;
+}
+.slider .batu {
+  background-image: url('../images/parachute.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  margin-bottom: 35px;
+  margin-top: 15px;
+  position: relative;
+  overflow: hidden;
+  height: 517px;
+}
+.slider .batu:hover .rightBatuInfo {
+  left: 60%;
+}
+.slider .batu:hover .seeMore {
+  right: calc(70%);
+}
+.slider .batu:hover .triangle {
+  left: calc(48%);
+}
+.slider .batu .rightBatuInfo {
+  width: 40%;
+  padding: 100px 55px;
+  position: absolute;
+  background-color: rgba(229, 231, 232, 0.9);
+  left: 100%;
+  top: 0;
+  bottom: 0;
+  transition: all ease-out 0.4s;
+}
+.slider .batu .rightBatuInfo h2 {
+  color: #29d9c2;
+  margin: 20px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  text-align: left;
+}
+.slider .batu .rightBatuInfo p {
+  font-size: 16px;
+  color: #777777;
+  line-height: 24px;
+  font-family: 'Lato', sans-serif;
+}
+.slider .batu .seeMore {
+  right: 30px;
+  bottom: 20px;
+  transition: all ease-out 0.4s;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffffff;
+  padding-right: 20px;
+}
+.slider .bromoRow {
+  width: 100%;
+  margin-bottom: 75px;
+  overflow: hidden;
+}
+.slider .bromoRow .bromo .seeMore,
+.slider .bromoRow .palm .seeMore {
+  right: 30px;
+  bottom: 20px;
+  transition: all ease-out 0.4s;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #ffffff;
+  padding-right: 20px;
+}
+.slider .bromoRow .bromo {
+  width: 57%;
+  background-image: url("../images/tree.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  float: left;
+  overflow: hidden;
+  height: 361px;
+  position: relative;
+}
+.slider .bromoRow .bromo:hover .lefrBromoInfo {
+  right: 50%;
+}
+.slider .bromoRow .bromo:hover .triangleBromo {
+  right: calc(38%);
+}
+.slider .bromoRow .bromo .lefrBromoInfo {
+  float: left;
+  width: 50%;
+  padding: 57px 30px;
+  position: absolute;
+  background-color: rgba(229, 231, 232, 0.9);
+  right: 100%;
+  top: 0;
+  bottom: 0;
+  transition: all ease-out 0.4s;
+}
+.slider .bromoRow .palm {
+  width: 40%;
+  background-image: url("../images/image3.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  float: left;
+  margin-left: 3%;
+  height: 361px;
+  position: relative;
+  overflow: hidden;
+}
+.slider .bromoRow .palm:hover .shadow {
+  background-color: rgba(43, 43, 43, 0.6);
+  width: 100%;
+  height: 100%;
+  transition: all ease-in 0.6s;
+}
+.slider .bromoRow .palm:hover .shadow .hoverPalm {
+  opacity: 1;
+  transition: all ease-in-out 0.5s;
+}
+.slider .bromoRow .palm .shadow .hoverPalm {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  top: calc(-10%);
+  left: calc(-10%);
+  opacity: 0;
+}
+.slider .bromoRow .palm .shadow .hoverPalm img {
+  opacity: 1;
+  display: block;
+  width: 70%;
+  margin: 10px auto;
+}
+.slider .bromo .lefrBromoInfo h2 {
+  color: #29d9c2;
+  margin: 20px 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  text-align: left;
+}
+.slider .bromo .lefrBromoInfo p {
+  font-size: 16px;
+  color: #777777;
+  line-height: 24px;
+  font-family: 'Lato', sans-serif;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 12px 8px 0;
+  border-color: transparent rgba(229, 231, 232, 0.9) transparent transparent;
+  position: absolute;
+  left: 100%;
+  top: calc(42%);
+  transition: all ease-out 0.4s;
+}
+.triangleBromo {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 0 8px 12px;
+  border-color: transparent transparent transparent rgba(229, 231, 232, 0.9);
+  position: absolute;
+  right: 100%;
+  top: calc(42%);
+  transition: all ease-out 0.4s;
+}
+.seeMore {
+  display: block;
+  position: absolute;
+}
+.infoContainer {
+  background-color: #ffffff;
+}
+.infoContainer .innerWrapper {
+  padding: 60px 0 80px;
+}
+.infoContainer .setIttinery {
+  text-align: center;
+  padding-bottom: 70px;
+}
+.infoContainer .setIttinery h2 {
+  color: #29d9c2;
+  font-size: 60px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 60px 0 40px;
+}
+.infoContainer .setIttinery h2 span {
+  color: #01a2a6;
+}
+.infoContainer .setIttinery p {
+  font-size: 16px;
+  color: #777777;
+  line-height: 24px;
+  font-family: 'Lato', sans-serif;
+}
+.infoContainer .colored .formHeader {
+  height: 70px;
+  background-image: url('../images/formImg.png');
+}
+.infoContainer .colored .formHeader h4 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 25px;
+}
+.infoContainer .colored .formBody {
+  background-color: #ffffa6;
+  padding: 15px 25px;
+}
+.infoContainer .colored .formBody .day {
+  margin-bottom: 20px;
+}
+.infoContainer .colored .formBody .day #day {
+  font-family: 'Montserrat', sans-serif;
+  color: #29d9c2;
+}
+.infoContainer .colored .formBody .day input[type=date] {
+  background-color: #ffffa6;
+  border: none;
+  float: right;
+  font-family: 'Montserrat', sans-serif;
+  color: #29d9c2;
+  font-size: 16px;
+  letter-spacing: 1px;
+  width: 160px;
+  padding-bottom: 15px;
+}
+.infoContainer .colored .formBody .day .line {
+  text-align: right;
+}
+.infoContainer .colored .formBody .day .line input[type="text"] {
+  width: 100%;
+  padding: 15px 62px;
+  border: 1px solid #e8e8e8;
+  text-align: left;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #777777;
+}
+.infoContainer .colored .formBody .day .line .mtBromo {
+  background-image: url("../images/logoBromo.png");
+  background-repeat: no-repeat;
+  background-position: 11px 12px;
+  background-size: 39px;
+  font-family: 'Montserrat', sans-serif;
+}
+.infoContainer .colored .formBody .day .line .batuCity {
+  background-image: url("../images/logoBatu.png");
+  background-repeat: no-repeat;
+  background-position: 11px 8px;
+  background-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+.infoContainer .colored .formBody .day .line ul {
+  background-color: #f5e99e;
+  text-align: left;
+  list-style-type: none;
+  margin: 0 5px;
+}
+.infoContainer .colored .formBody .day .line ul li {
+  padding: 15px;
+  color: #aea25c;
+  border-radius: 5px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+}
+.infoContainer .colored .formBody .day .line ul hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+.infoContainer .colored .formBody .day .line a {
+  display: inline-block;
+  padding: 5px 10px;
+  letter-spacing: 1px;
+  margin: 0 5px 10px 0;
+  background-color: #ffffa6;
+  color: #aea25c;
+  border: 1px solid #aea25c;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-family: 'Lato', sans-serif;
+}
+.infoContainer .colored .formBody .day .dragDestination {
+  text-align: center;
+  margin-top: 20px;
+}
+.infoContainer .colored .formBody .day .dragDestination span {
+  border: 3px dashed #aea25c;
+  padding: 20px 178px;
+  color: #aea25c;
+  background-color: #ffffa6;
+  font-family: 'Montserrat', sans-serif;
+  display: inline-block;
+  text-transform: capitalize;
+}
+.infoContainer .colored .formButtons {
+  float: right;
+  margin: 15px;
+}
+.infoContainer .colored button {
+  border: none;
+  cursor: pointer;
+}
+.infoContainer .colored .save {
+  box-shadow: white;
+  margin-right: 15px;
+  border-radius: 25px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 19px;
+  background: #c3f37f;
+  padding: 12px 25px 12px 25px;
+  text-transform: uppercase;
+}
+.infoContainer .colored .save:hover {
+  background-color: #a4ef3a;
+  cursor: pointer;
+}
+.contact h2 {
+  color: #29d9c2;
+  font-size: 60px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 60px 0 40px;
+}
+.contact form input,
+.contact form .yourMessages {
+  font-size: 16px;
+  color: #777777;
+  line-height: 24px;
+  font-family: 'Lato', sans-serif;
+}
+.contact form .submit:hover {
+  background-color: #a4ef3a;
+  cursor: pointer;
+}
+.keep p,
+.keep input {
+  font-size: 16px;
+  color: #777777;
+  line-height: 24px;
+  font-family: 'Lato', sans-serif;
+}
+.half {
+  width: 50%;
+  float: left;
+}
