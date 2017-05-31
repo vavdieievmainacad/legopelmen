@@ -1,5 +1,9 @@
 //color
 @tiffanyColor: #9bddd8;
+@tiffanyDarkColor: #29d9c2;
+@darkGrey: #777777;
+@lightGrey: #f2fefe;
+@grey: #e8e8e8;
 @white: #ffffff;
 @lcd: #01a2a6;
 @darkBlue: #10273d;
@@ -12,6 +16,40 @@
 //mixins
 .border_radius(@radius: 5px) {
   border-radius: @radius;
+}
+
+.h2 {
+  color: @tiffanyDarkColor;
+  font-size: 60px;
+  font-family: @montserrat;
+  margin: 60px 0 40px;
+}
+
+.sliderH2 {
+  color: @tiffanyDarkColor;
+  margin: 20px 0;
+  font-family: @montserrat;
+  font-size: 26px;
+  font-weight: 300;
+  text-align: left;
+}
+
+.p {
+  font-size: 16px;
+  color: @darkGrey;
+  line-height: 24px;
+  font-family: @lato;
+}
+
+.sliderSeeMore {
+  right: 30px;
+  bottom: 20px;
+  transition: all ease-out 0.4s;
+  font-family: @lato;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: @white;
+  padding-right: 20px;
 }
 
 * {
@@ -135,8 +173,6 @@ header {
       }
     }
   }
-
-
 }
 
 .cityOfLove {
@@ -146,6 +182,11 @@ header {
       img {
         padding-top: 50px;
       }
+    }
+    &.secondLine {
+      background-color: @lightGrey;
+      padding-top: 40px;
+      padding-bottom: 100px;
     }
     .half {
       padding-top: 30px;
@@ -159,6 +200,194 @@ header {
       opacity: 0.6;
       background-color: @white;
     }
+
+    h2 {
+      .h2;
+      span {
+        color: @lcd;
+      }
+    }
+
+    p {
+      .p;
+    }
+  }
+
+  .secondLine {
+    h2 {
+      .h2;
+      span {
+        color: @lcd;
+      }
+    }
+    p {
+      .p;
+    }
+    span {
+      &.details {
+        .p;
+      }
+    }
+  }
+}
+
+.secondLine {
+  .innerWrapper {
+    position: relative;
+    padding: 0 100px;
+  }
+  span {
+    &.details {
+      display: block;
+      position: absolute;
+      right: 100px;
+      top: 0;
+      cursor: help;
+    }
+  }
+
+}
+
+.slider {
+  background-color: @lightGrey;
+  .sliderNavigation {
+    padding: 5px 100px;
+    input {
+      .p;
+      padding: 5px 5px 5px 40px;
+      width: 235px;
+      height: 35px;
+      border-radius: 17px;
+      border: 1px solid @grey;
+      background-image: url("https://previewsworld.com/Content/images/icons/icon-search.png");
+      background-repeat: no-repeat;
+      background-position: 15px 9px;
+    }
+    a {
+      color: @darkGrey;
+      text-transform: uppercase;
+      font-family: @lato;
+      &.active {
+        font-weight: 700;
+        color: @lcd;
+        cursor: default;
+      }
+    }
+    .separator {
+      padding: 0 5px;
+      font-weight: 900;
+    }
+  }
+  .batu {
+    background-image: url('../images/parachute.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    margin-bottom: 35px;
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden;
+    height: 517px;
+
+    &:hover {
+      .rightBatuInfo {
+        left: 60%;
+      }
+      .seeMore {
+        right: calc(40% + 30px);
+      }
+      .triangle {
+        left: calc(60% - 12px);
+      }
+    }
+
+    .rightBatuInfo {
+      width: 40%;
+      padding: 100px 55px;
+      position: absolute;
+      background-color: rgba(229, 231, 232, 0.9);
+      left: 100%;
+      top: 0;
+      bottom: 0;
+      transition: all ease-out 0.4s;
+      h2 {
+        .sliderH2;
+      }
+      p {
+        .p;
+      }
+    }
+
+    .seeMore {
+      .sliderSeeMore;
+    }
+  }
+
+  .bromoRow {
+    .bromo, .palm {
+      .seeMore {
+        .sliderSeeMore;
+      }
+    }
+  }
+
+  .bromo {
+    .lefrBromoInfo {
+      h2 {
+        .sliderH2;
+      }
+      p {
+        .p;
+      }
+    }
+  }
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 12px 8px 0;
+  border-color: transparent rgba(229, 231, 232, 0.9) transparent transparent;
+  position: absolute;
+  left: 100%;
+  top: calc(50% - 8px);
+  transition: all ease-out 0.4s;
+}
+
+.seeMore {
+  display: block;
+  position: absolute;
+}
+
+.infoContainer {
+  .setIttinery {
+    h2 {
+      .h2;
+      span {
+        color: @lcd;
+      }
+    }
+    p {
+      .p;
+    }
+  }
+}
+
+.contact {
+  h2 {
+    .h2;
+  }
+  form {
+    input, .yourMessages {
+      .p;
+    }
+  }
+}
+
+.keep {
+  p, input {
+    .p;
   }
 }
 
