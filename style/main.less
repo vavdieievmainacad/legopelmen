@@ -8,6 +8,8 @@
 @lcd: #01a2a6;
 @darkBlue: #10273d;
 @lightSun: #ffffa6;
+@darkSun: #f5e99e;
+@deepSun: #aea25c;
 
 //fonts
 @montserrat: 'Montserrat', sans-serif;
@@ -16,6 +18,11 @@
 //mixins
 .border_radius(@radius: 5px) {
   border-radius: @radius;
+}
+
+.hoverButton {
+  background-color: #a4ef3a;
+  cursor: pointer;
 }
 
 .h2 {
@@ -324,9 +331,84 @@ header {
   }
 
   .bromoRow {
+    width: 100%;
+    margin-bottom: 75px;
+    overflow: hidden;
     .bromo, .palm {
       .seeMore {
         .sliderSeeMore;
+      }
+    }
+    .bromo {
+      width: 57%;
+      background-image: url("../images/tree.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+      float: left;
+      overflow: hidden;
+      height: 361px;
+      position: relative;
+      &:hover {
+        .lefrBromoInfo {
+          right: 50%;
+        }
+        .triangleBromo {
+          right: calc(50% - 12px);
+        }
+      }
+      .lefrBromoInfo {
+        float: left;
+        width: 50%;
+        padding: 57px 30px;
+        position: absolute;
+        background-color: rgba(229, 231, 232, 0.9);
+        right: 100%;
+        top: 0;
+        bottom: 0;
+        transition: all ease-out 0.4s;
+      }
+    }
+    .palm {
+      width: 40%;
+      background-image: url("../images/image3.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+      float: left;
+      margin-left: 3%;
+      height: 361px;
+      position: relative;
+      overflow: hidden;
+      &:hover {
+        .shadow {
+          background-color: rgba(43, 43, 43, 0.6);
+          width: 100%;
+          height: 100%;
+          transition: all ease-in 0.6s;
+          .hoverPalm {
+            opacity: 1;
+            transition: all ease-in-out 0.5s;
+          }
+        }
+      }
+      .shadow {
+        .hoverPalm {
+          position: absolute;
+          width: 120px;
+          height: 120px;
+          background-color: @white;
+          border-radius: 50%;
+          top: calc(50% - 60px);
+          left: calc(50% - 60px);
+          opacity: 0;
+          img {
+            opacity: 1;
+            display: block;
+            width: 70%;
+            margin: 10px auto;
+          }
+        }
       }
     }
   }
@@ -355,13 +437,31 @@ header {
   transition: all ease-out 0.4s;
 }
 
+.triangleBromo {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 0 8px 12px;
+  border-color: transparent transparent transparent rgba(229, 231, 232, 0.9);
+  position: absolute;
+  right: 100%;
+  top: calc(50% - 8px);
+  transition: all ease-out 0.4s;
+}
+
 .seeMore {
   display: block;
   position: absolute;
 }
 
 .infoContainer {
+  background-color: @white;
+  .innerWrapper {
+    padding: 60px 0 80px;
+  }
   .setIttinery {
+    text-align: center;
+    padding-bottom: 70px;
     h2 {
       .h2;
       span {
@@ -370,6 +470,135 @@ header {
     }
     p {
       .p;
+    }
+  }
+  .colored {
+    .formHeader {
+      height: 70px;
+      background-image: url('../images/formImg.png');
+      h4 {
+        text-align: center;
+        color: @white;
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-family: @montserrat;
+        padding: 25px;
+      }
+    }
+    .formBody {
+      background-color: @lightSun;
+      padding: 15px 25px;
+      .day {
+        margin-bottom: 20px;
+        #day {
+          font-family: 'Montserrat', sans-serif;
+          color: @tiffanyDarkColor;
+        }
+        input[type=date] {
+          background-color: @lightSun;
+          border: none;
+          float: right;
+          font-family: @montserrat;
+          color: @tiffanyDarkColor;
+          font-size: 16px;
+          letter-spacing: 1px;
+          width: 160px;
+          padding-bottom: 15px;
+        }
+        .line {
+          text-align: right;
+          input[type="text"] {
+            width: 100%;
+            padding: 15px 62px;
+            border: 1px solid @grey;
+            text-align: left;
+            border-radius: 5px;
+            font-size: 18px;
+            color: @darkGrey;
+          }
+          .mtBromo {
+            background-image: url("../images/logoBromo.png");
+            background-repeat: no-repeat;
+            background-position: 11px 12px;
+            background-size: 39px;
+            font-family: @montserrat;
+          }
+          .batuCity {
+            background-image: url("../images/logoBatu.png");
+            background-repeat: no-repeat;
+            background-position: 11px 8px;
+            background-size: 30px;
+            font-family: @montserrat;
+          }
+          ul {
+            background-color: @darkSun;
+            text-align: left;
+            list-style-type: none;
+            margin: 0 5px;
+            li {
+              padding: 15px;
+              color: @deepSun;
+              border-radius: 5px;
+              font-size: 16px;
+              letter-spacing: 1px;
+              font-family: @montserrat;
+            }
+            hr {
+              border: 0;
+              height: 1px;
+              background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+            }
+          }
+          a {
+            display: inline-block;
+            padding: 5px 10px;
+            letter-spacing: 1px;
+            margin: 0 5px 10px 0;
+            background-color: @lightSun;
+            color: @deepSun;
+            border: 1px solid @deepSun;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            font-family: @lato;
+          }
+        }
+        .dragDestination{
+          text-align: center;
+          margin-top: 20px;
+          span{
+            border: 3px dashed @deepSun;
+            padding: 20px 178px;
+            color: @deepSun;
+            background-color: @lightSun;
+            font-family: @montserrat;
+            display: inline-block;
+            text-transform: capitalize;
+          }
+        }
+      }
+
+    }
+    .formButtons{
+      float: right;
+      margin: 15px;
+    }
+    button {
+      border: none;
+      cursor: pointer;
+    }
+    .save {
+      box-shadow: white;
+      margin-right: 15px;
+      border-radius: 25px;
+      font-family: @montserrat;
+      color: @white;
+      font-size: 19px;
+      background: #c3f37f;
+      padding: 12px 25px 12px 25px;
+      text-transform: uppercase;
+      &:hover {
+       .hoverButton;
+      }
     }
   }
 }
@@ -381,6 +610,12 @@ header {
   form {
     input, .yourMessages {
       .p;
+    }
+
+    .submit {
+      &:hover {
+        .hoverButton;
+      }
     }
   }
 }
