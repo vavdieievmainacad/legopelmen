@@ -1,6 +1,22 @@
+.social_li {
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0px 0px 0px 20px;
+  cursor: pointer;
+}
+.info_li {
+  background-repeat: no-repeat;
+  padding: 0px 0px 0px 30px;
+  cursor: pointer;
+}
 header {
   width: 100%;
-  display: inline-block;
+  height: 60px;
+}
+header hr {
+  background-color: #f1f2f4;
+  height: 1px;
+  margin-top: 0px;
 }
 .left {
   float: left;
@@ -12,49 +28,63 @@ header {
   float: none;
   clear: both;
 }
+.info {
+  padding-left: 163px;
+}
 .info.left li {
   display: inline-block;
   padding: 0 10px;
 }
 .info.left .li-email {
-  background-image: url('../images/Mail Ico.png');
-  background-position: left center;
-  padding: 10px 0px 10px 30px;
+  background-image: url('../images/sprite.png');
+  background-position: 0px 6px;
+  width: 18px;
+  height: 11px;
   background-repeat: no-repeat;
+  padding: 0px 0px 0px 30px;
   cursor: pointer;
 }
 .info.left .li-phone {
-  background-image: url('../images/Phone Ico.png');
-  background-position: left center;
+  background-image: url('../images/sprite.png');
+  background-position: 0px -11px;
+  width: 12px;
+  height: 12px;
   background-repeat: no-repeat;
-  padding: 10px 0px 10px 25px;
+  padding: 0px 0px 0px 30px;
+  cursor: pointer;
 }
-.social.right {
-  margin-left: auto;
-  margin-right: auto;
+.social {
+  padding-right: 163px;
 }
 .social.right li {
   display: inline-block;
+  padding: 5px;
 }
 .social.right .li-facebook {
   background-image: url('../images/facebook.png');
+  background-position: center;
   background-repeat: no-repeat;
+  padding: 0px 0px 0px 20px;
   cursor: pointer;
 }
 .social.right .li-twitter {
   background-image: url('../images/twitter.png');
+  background-position: center;
   background-repeat: no-repeat;
+  padding: 0px 0px 0px 20px;
   cursor: pointer;
 }
 .social.right .li-google {
   background-image: url('../images/google.png');
+  background-position: center;
   background-repeat: no-repeat;
+  padding: 0px 0px 0px 20px;
   cursor: pointer;
 }
 .social.right .li-instagram {
   background-image: url('../images/instegram.png');
+  background-position: center;
   background-repeat: no-repeat;
+  padding: 0px 0px 0px 20px;
   cursor: pointer;
 }
-
-/*# sourceMappingURL=main.css.map */
