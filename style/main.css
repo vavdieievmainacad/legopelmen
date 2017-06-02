@@ -5,6 +5,7 @@
   cursor: pointer;
 }
 .info_li {
+  background-position: center;
   background-repeat: no-repeat;
   padding: 0px 0px 0px 30px;
   cursor: pointer;
@@ -33,25 +34,29 @@ header hr {
 }
 .info.left li {
   display: inline-block;
-  padding: 0 10px;
 }
 .info.left .li-email {
-  background-image: url('../images/sprite.png');
+  background-image: url('../images/Mail Ico.png');
   background-position: 0px 6px;
   width: 18px;
   height: 11px;
+  background-position: center;
   background-repeat: no-repeat;
   padding: 0px 0px 0px 30px;
   cursor: pointer;
 }
 .info.left .li-phone {
-  background-image: url('../images/sprite.png');
+  background-image: url('../images/Phone Ico.png');
   background-position: 0px -11px;
   width: 12px;
   height: 12px;
+  background-position: center;
   background-repeat: no-repeat;
   padding: 0px 0px 0px 30px;
   cursor: pointer;
+}
+.svg {
+  display: block;
 }
 .social {
   padding-right: 163px;
